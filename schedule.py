@@ -140,6 +140,19 @@ print("@CHAPTER 13 : START(10-1)\n")
 # built in funcitons: enumerate, map, filter, iterator, zip, advance funciotn practice etc
 # https://www.youtube.com/playlist?list=PLwgFb6VsUj_lQTpQKDtLXKXElQychT_2j
 # video 161 - completed / tutorial 158 on 10-1
-print("CHAPTER 13 : COMPLETED(-1)\n\n")                                                           
+print("CHAPTER 13 : COMPLETED(11-1)\n\n")
+
+## GIT SETUP ON 11 - 1
+
+print("@CHAPTER 14 : START(11-1)\n")
+# decorators
+# https://www.youtube.com/playlist?list=PLwgFb6VsUj_lQTpQKDtLXKXElQychT_2j
+# https://www.geeksforgeeks.org/decorators-in-python/
+
+print("CHAPTER 14 : COMPLETED(11-1)\n\n")
+
+
+
+
 
 
