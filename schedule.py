@@ -152,7 +152,12 @@ print("@CHAPTER 14 : START(11-1)\n")
 print("CHAPTER 14 : COMPLETED(11-1)\n\n")
 
 
-
+print("@CHAPTER 15 : START(11-1)\n")
+# GENERATORS : START
+# https://www.youtube.com/playlist?list=PLwgFb6VsUj_lQTpQKDtLXKXElQychT_2j
+# https://www.geeksforgeeks.org/generators-in-python/
+# TUTORIAL NUMBER 178 IS GOING ON  --> 11-1
+print("CHAPTER 15 : COMPLETED(12-1)\n\n")
 
 
 
