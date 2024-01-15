@@ -30,7 +30,7 @@ print("DAY - 2(4-1) BASH COMMANDS ---->>>")
 
 # print("***************  CHAPTER 0 COMPLETED(4-1)  *****************\n\n")
 
-print("************  10 Days Schedule 5-1 to 14-1  ***********\n\n")
+print("************  10 Days Schedule 5-1 to 18-1  ***********\n\n")
 
 print("@CHAPTER 1 : START(4-1)")
 
@@ -151,7 +151,6 @@ print("@CHAPTER 14 : START(11-1)\n")
 
 print("CHAPTER 14 : COMPLETED(11-1)\n\n")
 
-
 print("@CHAPTER 15 : START(11-1)\n")
 # GENERATORS : START
 # https://www.youtube.com/playlist?list=PLwgFb6VsUj_lQTpQKDtLXKXElQychT_2j
@@ -161,5 +160,14 @@ print("CHAPTER 15 : COMPLETED(12-1)\n\n")
 
 # 12-1 annualday/ halftime
 # task 3 problems 12-1
+# 13-1 and 14-1 sat/sun
+
+print("@CHAPTER 16 : START(15-1)\n")
+# OOPs
+# https://www.youtube.com/playlist?list=PLwgFb6VsUj_lQTpQKDtLXKXElQychT_2j
+# https://www.geeksforgeeks.org/python-oops-concepts/
+
+print("CHAPTER 16 : COMPLETED(15-1)\n\n")
+
 
 
