@@ -169,5 +169,11 @@ print("@CHAPTER 16 : START(15-1)\n")
 
 print("CHAPTER 16 : COMPLETED(15-1)\n\n")
 
+print("@CHAPTER 17 : START(15-1)\n")
+# EXCEPTION and ERROR HANDLING :
+# https://www.youtube.com/playlist?list=PLwgFb6VsUj_lQTpQKDtLXKXElQychT_2j
+# https://www.geeksforgeeks.org/python-exception-handling/
+
+print("CHAPTER 17 : COMPLETED(-1)\n\n")
 
 
