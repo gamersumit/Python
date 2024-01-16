@@ -1,0 +1,19 @@
+Simple Task Manager
+Objective:
+Create a simple task manager using Python where users can add tasks, view tasks, mark tasks as completed, and delete tasks. In the TaskManager class, the list (task_list) serves as an in-memory data store for tasks. Tasks are added, viewed, marked as completed, and deleted directly from this list.
+1. Task Class:
+Question 1.1: Create a class named Task with the following attributes: title, description, and completed.
+Question 1.2: Implement a method named display_task_details in the Task class that prints the details of a task.
+2. Task Manager Class:
+Question 2.1: Create a class named TaskManager that has a list to store tasks.
+Question 2.2: Implement a method named add_task in the TaskManager class that takes user input for a new task and adds it to the task list.
+Question 2.3: Implement a method named view_tasks in the TaskManager class that displays the details of all tasks.
+Question 2.4: Implement a method named mark_completed in the TaskManager class that allows the user to mark a task as completed.
+Question 2.5: Implement a method named delete_task in the TaskManager class that allows the user to delete a task.
+3. User Interface:
+Question 3.1: Implement a simple text-based user interface using the input() function to display a menu of options.
+Question 3.2: Take user input to determine the user's choice and call the appropriate method from the TaskManager class.
+4. Menu Loop:
+Question 4.1: Implement a loop that continues to display the menu until the user chooses to exit.
+5. Validation:
+Question 5.1: Validate user input to ensure it's within the expected range or format. For example, ensure the user doesn't enter a letter when expecting a number.

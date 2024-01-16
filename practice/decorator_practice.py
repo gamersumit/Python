@@ -77,12 +77,12 @@ import random
 # def retry_dec(num):  # random module imported
 #     def decorator(func):
 #         def wrapper(*args, **kwargs):
-#             left = num
+#             nonlocal num
 #             while left != 0:
 #                 try : res = func(*args, **kwargs)
 #                 except : 
 #                     print("failed... retrying...")
-#                     left -= 1
+#                     num -= 1
 #                 else: return res
             
 #         return wrapper
@@ -99,12 +99,3 @@ import random
 
 ########################################################################
 
-# def fun1(num):
-#     def fun2():
-#         num -= 1
-#         print('num is: ',num)
-#     return fun2
-
-
-# a= fun1(5)
-# a()
