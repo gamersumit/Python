@@ -78,3 +78,4 @@ def count_names(names) :
 
 names = ['sumit', 'sumit', 'prashant', 'prashant', 'sumit', 'lalit', 'sumit','lalit', 'prashant','prashant']
 print(count_names(names))
+

@@ -1,3 +1,4 @@
+# self practice : 16 -1 to 16-1
 import time
 
 # EXCERCISE 1:
