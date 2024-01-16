@@ -20,46 +20,62 @@ import pdb
 #* Create a function that searches for a given value in a nested dictionary. The function should return the key path to the value if found, otherwise, return a message indicating that the value was not found.
 
 
-def serach_dict(dic, target, path = []):
+# def serach_dict(dic, target, path = []):
 
-    for key, value in dic.items():
-        current_path = path + [key]
+#     for key, value in dic.items():
+#         current_path = path + [key]
     
-        if value == target:
-            return current_path
+#         if value == target:
+#             return current_path
         
-        if isinstance(value, dict):
-            result = serach_dict(value, target, current_path)
-            if result:
-                return result
+#         if isinstance(value, dict):
+#             result = serach_dict(value, target, current_path)
+#             if result:
+#                 return result
 
-    return "value not found"
+#     return None
 
 
-pdb.set_trace()
 
-dicti = {
-    'd1' : {
-        'e1' : {
-            'f1' : 21,
-            'f2' : 22,
-        },
-        'e2' : {
-            'f3' : 23,
-            'f4' : 24
 
-        }
-    } ,
-    'd2' : {
-        'e3' : {
-             'f5' : 25,
-             'f6' : 26
-        },
-    'e4' : {
-            'f7' : 27,
-            'f8' : 28
-        }
-    }
-}
+# dicti = {
+#     'd1' : {
+#         'e1' : {
+#             'f1' : 21,
+#             'f2' : 22,
+#         },
+#         'e2' : {
+#             'f3' : 23,
+#             'f4' : 24
 
-print(serach_dict(dicti, 27))
+#         }
+#     } ,
+#     'd2' : {
+#         'e3' : {
+#              'f5' : 25,
+#              'f6' : 26
+#         },
+#     'e4' : {
+#             'f7' : 27,
+#             'f8' : 28
+#         }
+#     }
+# }
+
+# print(serach_dict(dicti, 27))
+
+
+#* Frequency Count:
+#* Create a function that takes a list of words as input and returns a dictionary with the frequency count of each word. The function should be case-insensitive.
+
+def count_names(names) :
+    dic = {}
+    for name in names :
+        if name.title() not in dic:
+            dic[name.title()] = names.count(name)
+    
+    return dic
+
+names = ['sumit', 'sumit', 'prashant', 'prashant', 'sumit', 'lalit', 'sumit','lalit', 'prashant','prashant']
+print(count_names(names))
+
