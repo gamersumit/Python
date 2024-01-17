@@ -3,6 +3,7 @@ import os  # To clear console
 def takeStringInput(message):  # handles string input so user don't enter empty string
     while True:               # runs until valid/non-empty string provided
         inp1 = input(message)
+        
         if inp1 : return inp1
         else : print('\tempty input !!')
         
