@@ -183,12 +183,29 @@ print("CHAPTER 17 : COMPLETED(15-1)\n\n")
 print("************  4 Working Days Schedule 19-1 to 24-1  ***********\n\n")
 # Django : basics, views, Templates, Static files, Models, Forms, URLs, Admin Interface
 
+################################################################
+
+#make folder
+#open folder in terminal
+# pipenv --python 3.8
+# pipenv install django
+# pipenv shell  #-> to activate virtual environment
+# django-admin
+# django-admin startproject projectname .
+# python manage.py runserver  #-> to start the server
+# to find path of virtual environment in system
+# python manage.py startapp appname to create an app
+
+################################################################
+
 # https://docs.djangoproject.com/en/4.2/topics/ 
 # https://www.geeksforgeeks.org/django-tutorial/ 
 # https://www.tutorialspoint.com/django/index.htm 
 # https://www.youtube.com/watch?v=rHux0gMZ3Eg 
 # https://www.youtube.com/watch?v=UmljXZIypDc&list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p 
 # https://www.youtube.com/watch?v=jBzwzrDvZ18&t=16s 
+
+################################################################
 
 
 
