@@ -176,7 +176,6 @@ print("@CHAPTER 17 : START(15-1)\n")
 
 print("CHAPTER 17 : COMPLETED(15-1)\n\n")
 
-
 # chatgpt questions practice on decorators : 16-1
 # chatgpt questions practice on dictionaries : 16-1
 # built taskmanager project on 16-1 (task given on 16-1)
@@ -190,3 +189,7 @@ print("************  4 Working Days Schedule 19-1 to 24-1  ***********\n\n")
 # https://www.youtube.com/watch?v=rHux0gMZ3Eg 
 # https://www.youtube.com/watch?v=UmljXZIypDc&list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p 
 # https://www.youtube.com/watch?v=jBzwzrDvZ18&t=16s 
+
+
+
+
