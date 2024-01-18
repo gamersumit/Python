@@ -5,16 +5,16 @@
 #pipenv install requests   
  
 import requests  # importing request module to get its functionality and dependencies
-from requests.exceptions import HTTPError # importing httperror module from requests excetions to identify http errors
+from requests.exceptions import HTTPError # importing httperror module from requests exceptions to identify http errors
 import json   # to work with request's response as json object
 
 try:
     response = requests.get('https://v2.jokeapi.dev/joke/Any') # trying to retrieve data(instance of response) and storing it in a variable named response
 
-except HTTPError as http_err:  # check if any HTTP error HAS OCCURED
+except HTTPError as http_err:  # check if any HTTP error HAS OCCURED during the excution of code in our try block(request for retriving data)
     print(f'HTTP error occurred: {http_err}')  
 
-except Exception as e:      # CHECK IF ANY OTHER ERROR HAS OCCURED
+except Exception as e:      # CHECK IF ANY OTHER ERROR/exception HAS OCCURED
     print(f'Other error occurred: {e}')
 
 else:  # if no exception/error occurs/ if our request is successful
