@@ -186,6 +186,15 @@ print("@Django : START(17-1)")
 # Django : basics, views, Templates, Static files, Models, Forms, URLs, Admin Interface
 
 ################################################################
+
+# https://docs.djangoproject.com/en/4.2/topics/ 
+# https://www.geeksforgeeks.org/django-tutorial/ 
+# https://www.tutorialspoint.com/django/index.htm 
+# https://www.youtube.com/watch?v=rHux0gMZ3Eg    (done on 17-1 to 17-1)
+# https://www.youtube.com/watch?v=UmljXZIypDc&list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p  
+# https://www.youtube.com/watch?v=jBzwzrDvZ18&t=16s 
+
+################################################################
 # commands for django --- 17-1
 #make folder
 #open folder in terminal
@@ -203,14 +212,6 @@ print("@Django : START(17-1)")
 # to find path of virtual environment in system
 # python manage.py startapp appname to create an app
 
-################################################################
-
-# https://docs.djangoproject.com/en/4.2/topics/ 
-# https://www.geeksforgeeks.org/django-tutorial/ 
-# https://www.tutorialspoint.com/django/index.htm 
-# https://www.youtube.com/watch?v=rHux0gMZ3Eg    (done on 17-1 to 17-1)
-# https://www.youtube.com/watch?v=UmljXZIypDc&list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p  
-# https://www.youtube.com/watch?v=jBzwzrDvZ18&t=16s 
 
 ################################################################
 
@@ -220,10 +221,11 @@ print("@Django : START(17-1)")
 
 ################################################
 # date 18-1
+
 # python request library : https://realpython.com/python-requests/ 
-
-
-print("Django : on(18-1)")
-
+# completed task on request library of python(18-1 to 18-1)
+# https://www.tutorialsteacher.com/question-answer/python/set/ (output guessing mcqs)
+# updation in task manager
+# continuation of Django
 
 
