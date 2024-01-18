@@ -181,14 +181,21 @@ print("CHAPTER 17 : COMPLETED(15-1)\n\n")
 # built taskmanager project on 16-1 (task given on 16-1)
 
 print("************  4 Working Days Schedule 19-1 to 24-1  ***********\n\n")
+print("@Django : START(17-1)")
+
 # Django : basics, views, Templates, Static files, Models, Forms, URLs, Admin Interface
 
 ################################################################
-
+# commands for django --- 17-1
 #make folder
 #open folder in terminal
-# pipenv --python 3.8
+#install virtual enviornment in folder :-
+# python3 -m venv myenv
+# source myenv/bin/activate
+# install django inside folder :-
+# pipenv --python 3.x
 # pipenv install django
+# python -m django version
 # pipenv shell  #-> to activate virtual environment
 # django-admin
 # django-admin startproject projectname .
@@ -201,12 +208,22 @@ print("************  4 Working Days Schedule 19-1 to 24-1  ***********\n\n")
 # https://docs.djangoproject.com/en/4.2/topics/ 
 # https://www.geeksforgeeks.org/django-tutorial/ 
 # https://www.tutorialspoint.com/django/index.htm 
-# https://www.youtube.com/watch?v=rHux0gMZ3Eg 
-# https://www.youtube.com/watch?v=UmljXZIypDc&list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p 
+# https://www.youtube.com/watch?v=rHux0gMZ3Eg    (done on 17-1 to 17-1)
+# https://www.youtube.com/watch?v=UmljXZIypDc&list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p  
 # https://www.youtube.com/watch?v=jBzwzrDvZ18&t=16s 
 
 ################################################################
 
+# did some practice on list on 17-1
+# did some practice on python mixed output questions
+# django setup on 17-1
+
+################################################
+# date 18-1
+# python request library : https://realpython.com/python-requests/ 
+
+
+print("Django : on(18-1)")
 
 
 
