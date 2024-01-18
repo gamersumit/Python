@@ -4,7 +4,7 @@ def takeStringInput(message):  # handles string input so user don't enter empty 
     while True:               # runs until valid/non-empty string provided
         inp1 = input(message)
         if inp1 : return inp1
-        else : print('\tempty input !!')
+        else : print('\tempty input not allowed!!')
         
         input()
         os.system('clear')
@@ -12,6 +12,13 @@ def takeStringInput(message):  # handles string input so user don't enter empty 
 def takeIntInput(message, st, ed):  # handles Integer input so user don't enter any string or invalid input st and ed defines range of int st as start ans ed as end
     while True:               # runs until valid int is provided
         inp1 = input(message)
+        
+        if not inp1:  # if input is empty
+             print("empty input not allowed!!")
+             input()
+             os.system('clear')
+             continue
+
         try:
             inp1 = int(inp1)  # checks if input is a valid int
         except ValueError :
@@ -29,7 +36,7 @@ class Task:  # class task to built or create task
     def __init__(self, title, description, completed = False):  # constructor initalizing title, description, completed(status)
         self.title = title             # string.title()
         self.description = description # string
-        self.completed = completed   # bool
+        self.completed = False   # bool set tot false automatically at first 
     
     def display(self):    # display info of our task
         print(f'Title: {self.title}, Description: {self.description}, Completed: {self.completed}\n')
@@ -50,9 +57,9 @@ class Taskmanager:  # class task manager manages all tasks and operations on the
             return None # if task already exists end the function
         
         description = takeStringInput('ENTER TASK DESCRIPTION: ') # description of the task
-        completed =   bool(takeIntInput("enter 1 if task is completed else enter 0: ", 0, 1)) # boolean indicating if task is completed or not
+        ## completed =   bool(takeIntInput("enter 1 if task is completed else enter 0: ", 0, 1)) # boolean indicating if task is completed or not
         
-        obj = Task(title.title(), description, completed) # creates object/task of clas Task 
+        obj = Task(title.title(), description) # creates object/task of clas Task 
         cls.record[title.title()] = obj  # add that object to out record list
         print("\n\tTask added successfully")
         input()
