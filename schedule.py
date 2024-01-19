@@ -199,6 +199,12 @@ print("@Django : START(17-1)")
 # pipenv shell  #-> to activate virtual environment
 # django-admin
 # django-admin startproject projectname .
+# install virtual environment for the project itself
+# python3 -m venv myenv
+# source myenv/bin/activate
+# install django inside project folder :-
+# pip install django
+# python -m django version
 # python manage.py runserver  #-> to start the server
 # to find path of virtual environment in system
 # python manage.py startapp appname to create an app
@@ -224,6 +230,11 @@ print("@Django : START(17-1)")
 
 
 print("Django : on(18-1)")
+
+
+################################################
+# date 19-1
+
 
 
 
