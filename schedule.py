@@ -235,7 +235,28 @@ print("@Django : START(17-1)")
 # continuation of Django
 
 ################################################
-# date 19-1
+# date 19-1(short leave 4-6)
+# continuation of Django
+# static files
+# get vs post
+# word counter in django
+# sending data to templates
+# url routing
+
+################################################
+
+# date 20-1 & 21-1 sat/sun
+
+################################################
+
+# date 22-1 
+# django models
+# django admin panel
+# manipulation of database
+# user registration in django
+# user login and logout
+# dynamic url routing
+# postgesql setup
 
 
 
