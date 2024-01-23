@@ -1,0 +1,22 @@
+<style>
+    h5{
+        color: red;
+    }
+    </style>
+    {% for message in messages %}
+    <h5>{{message}}</h5>
+    {% endfor %}
+
+<h1>!! EDIT TASK !!</h1>
+<form method="POST" action="edit">
+    {% csrf_token %}
+    <p>title:</p>
+    <input type="text" name="title" />
+    <p>
+        Enter 0 to change tilte <br>
+        Enter 1 to change description<br>
+        Enter 2 to change status
+    </p>
+    <input type="text" name="choice" />
+    <input type="submit" />
+</form>

@@ -1,0 +1,17 @@
+<style>
+    h5{
+        color: red;
+    }
+    </style>
+    {% for message in messages %}
+    <h5>{{message}}</h5>
+    {% endfor %}
+<h1>!! ADD TASK !!</h1>
+<form method="POST" action="add">
+    {% csrf_token %}
+    <p>title:</p>
+    <input type="text" name="title" />
+    <p>body:</p>
+    <input type="text" name="body" /> 
+    <input type="submit" />
+</form>
