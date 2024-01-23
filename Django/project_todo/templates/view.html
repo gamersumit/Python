@@ -1,0 +1,9 @@
+<h1>!! Task list  !!</h1><br>
+
+{% for task in tasks %}
+<h5>---------------------------------------</h5>
+<h2>Title: {{task.title}}</h2> 
+<h4>Description: {{task.body}}</h4> 
+<h4>Status: {{task.status}}</h4> 
+<h5>---------------------------------------</h5>
+{% endfor %}
