@@ -258,6 +258,10 @@ print("@Django : START(17-1)")
 # dynamic url routing
 # postgesql setup
 
+################################################
+
+# date 23-1 
+
 
 
 
