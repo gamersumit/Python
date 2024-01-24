@@ -1,0 +1,36 @@
+<style>
+    h5{
+        color: red;
+    }
+    </style>
+    {% for message in messages %}
+    <h5>{{message}}</h5>
+    {% endfor %}
+<h1>!! EDIT TASK DETAILS !!</h1>
+
+ 
+<form method="POST" action = "edit_details">
+    {% csrf_token %}
+
+    <input type="hidden" name="task" value="{{task}}" />
+    <input type="hidden" name="status" value = "{{status}}"/>
+    <input type="hidden" name="title" value = "{{title}}"/>
+    <input type="hidden" name="body" value = "{{body}}"/>
+
+
+    {% if title %}
+    <p>TITLE:</p>
+    <input type="text" name="newtitle" />
+    {% endif %}
+
+    {% if body %}
+    <p>BODY:</p>
+    <input type="text" name="newbody"/>
+    {% endif %}
+
+    {% if status %}
+    <P>STATUS    <input type = 'checkbox' name="newstatus" /></P>
+    {% endif %}
+
+    <br><br><input type="submit" />
+</form>
