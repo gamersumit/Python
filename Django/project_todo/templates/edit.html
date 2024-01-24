@@ -10,13 +10,18 @@
 <h1>!! EDIT TASK !!</h1>
 <form method="POST" action="edit">
     {% csrf_token %}
-    <p>title:</p>
+    <p>Title:  enter title of the task you want to edit</p>
     <input type="text" name="title" />
     <p>
-        Enter 0 to change tilte <br>
-        Enter 1 to change description<br>
-        Enter 2 to change status
+       <br><br>
+        SELECT WHATEVER YOU WANT TO EDIT :<br><br>
+        <input type="checkbox" name="head" />
+        TITLE<br>
+        <input type="checkbox" name="body" />
+        DESCRIPTION / BODY<br>
+        <input type="checkbox" name="status" />
+        STATUS
     </p>
-    <input type="text" name="choice" />
+    
     <input type="submit" />
 </form>

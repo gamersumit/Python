@@ -2,11 +2,17 @@
     h5{
         color: red;
     }
-    </style>
-    {% for message in messages %}
-    <h5>{{message}}</h5>
-    {% endfor %}
+</style>
+
+
+{% for message in messages %}
+<h5>{{message}}</h5>
+{% endfor %}
+
+
 <h1>!! ADD TASK !!</h1>
+
+
 <form method="POST" action="add">
     {% csrf_token %}
     <p>title:</p>
