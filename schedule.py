@@ -261,7 +261,59 @@ print("@Django : START(17-1)")
 ################################################
 
 # date 23-1 
+# made realtime chat app
+# made a weather app
+# made a blog app
+# task give :- todo project (completed 3 operations add,view,delete)
+
+################################################
+
+# date 24 -1
+# completed edit operation in todo
+# started DJANGO REST FRAMEWORK
+
+################################################################################                                                                  
+print("Django rest framework: ------ acc. to schedule  25-1 --- 9 working days ----8/2/24 ")
+
+## TOPIC:-
+
+# Python RegEx
+# Django Rest Getting Started
+# Rest Framework View & Response
+# Django Rest Framework Model Serializers
+#  Ingest Data with Django Rest Framework Views
+# Django Rest Framework Generics APIViews
+# Using Function Based Views
+# Mixins and a Generic API View
+# Session Authentication & Permissions
+# User & Group Permissions with DjangoModelPermissions 
+# Custom Permissions
+# Token Authentication
+# Default Django Rest Framework Settings
+# Using Mixins for Permissions
+# ViewSets & Routers
+# URLs, Reverse, & Serializers
+# Model Serializer
+# Custom Validation with Serializers
+# Request User Data & Customize View Queryset
+# Related Fields & Foreign Key Serializer
+# Pagination
+# Unified Design of Serializers & Indices
+# JSON WEB Token Authentication with simplejwt
+# Handle Request Blocked by CORS via django cors headers
+# Using JWT with JS Client
+# Search via REST API 
 
 
 
+## RESOURCE :-
 
+# https://www.youtube.com/watch?v=c708Nf0cHrs 
+# https://github.com/codingforentrepreneurs/Django-Rest-Framework-Tutorial
+# https://www.django-rest-framework.org/ 
+# https://www.django-rest-framework.org/community/tutorials-and-resources/ 
+# https://www.scaler.com/topics/django/rest-api/ 
+# https://testdriven.io/blog/topics/django-rest-framework/ 
+# https://testdriven.io/blog/drf-views-part-3/ 
+
+################################################################
