@@ -5,7 +5,7 @@ import requests
 # endpoint= "https://httpbin.org/anything" # rest api
 endpoint =  "http://127.0.0.1:8000/api/"
 
-get_response = requests.get(endpoint, params = {"abc": 123}, json={"query": "hello world"}) # http request
+get_response = requests.post(endpoint, params = {"abc": 123}, json={"title" : None, "content": "hello world"}) # http request
 # print(get_response.text) # print raw text response
 # print(get_response.json()['message'])  # geeting data from restapi
 print(get_response.json())
