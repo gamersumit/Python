@@ -271,7 +271,7 @@ print("@Django : START(17-1)")
 # date 24 -1
 # completed edit operation in todo
 # started DJANGO REST FRAMEWORK
-
+# upto creating views with api
 ################################################################################                                                                  
 print("Django rest framework: ------ acc. to schedule  25-1 --- 9 working days ----8/2/24 ")
 
