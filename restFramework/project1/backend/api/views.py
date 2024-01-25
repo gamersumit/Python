@@ -1,5 +1,6 @@
 from django.http import JsonResponse
 from product.models import Product
+from django.forms.models import model_to_dict
 import json
 
 def api_home(request, *args, **kwargs):
@@ -32,8 +33,12 @@ def api_home(request, *args, **kwargs):
     model_data = Product.objects.all().order_by("?").first()
     data = {}
     if model_data :
-        data['id'] = model_data.id
-        data['title'] = model_data.title
-        data['price'] = model_data.price
-        data['content'] = model_data.content
+        # data['id'] = model_data.id
+        # data['title'] = model_data.title
+        # data['price'] = model_data.price
+        # data['content'] = model_data.content
+        # <!----- instead ------->
+        data = model_to_dict(model_data)
+        # also 
+        # data = model_to_dict(model_data, fields = ['id', 'title']) # taking some part/keys of our model
     return JsonResponse(data)
