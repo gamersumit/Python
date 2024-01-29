@@ -57,16 +57,22 @@ def api_home(request, *args, **kwargs):
     """
     # model_data = Product.objects.all().order_by("?").first()
     # data = request.data
+    data = {}
     serializer = ProductSerializer(data=request.data)
     if serializer.is_valid(raise_exception = True):
+        # print("all good")
         instance = serializer.save()
-        print(instance)
+        # print(instance)
+        data = ProductSerializer(instance).data
+        # print(data)
         # data = serializer.data
-        return Response(serializer.data)
-    # instance = Product.objects.all().order_by("?").first()
-    # data = {}
-    # if instance :
-    #     # data = model_to_dict(instance, fields = ['id', 'title', 'price', 'sale_price'])
-    #     data = ProductSerializer(instance).data
-    # return Response(data)
-    return Response({"invalid": "not good data"}, status = 400)
+        # print(data)
+    # #     return Response(serializer.data)
+    # # instance = Product.objects.all().order_by("?").first()
+    # # data = {}
+    # # if instance :
+    # #     ## data = model_to_dict(instance, fields = ['id', 'title', 'price', 'sale_price'])
+    # #     data = ProductSerializer(instance).data
+    return Response(data)
+    # return Response({"invalid": "not good data"}, status = 400)
+   
