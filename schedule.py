@@ -330,3 +330,4 @@ print("Django rest framework: ------ acc. to schedule  25-1 --- 9 working days -
 # serialization -> extracting/output data from a object
 # deserialization -> making an object based on the input data
 # ingesting data django rest framework view
+# django generics retrieveAPIView
