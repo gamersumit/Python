@@ -326,7 +326,9 @@ print("Django rest framework: ------ acc. to schedule  25-1 --- 9 working days -
 # django rest framework model serializers
 
 ################################################################
-# date 29-1  // 26 jan holiday, 27-1, 28-1 sat/sun
+# 26 jan holiday, 27-1, 28-1 sat/sun
+
+# date 29-1  
 # serialization -> extracting/output data from a object
 # deserialization -> making an object based on the input data
 # ingesting data django rest framework view
@@ -334,5 +336,9 @@ print("Django rest framework: ------ acc. to schedule  25-1 --- 9 working days -
 # django rest framework createapiview
 # listAPIview
 # createListAPIview
+# using function based views for create, retrieve, or list
+# Update and destroy api views
+# mixins and a generic api view
+
 
 

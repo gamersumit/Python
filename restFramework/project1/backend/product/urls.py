@@ -17,4 +17,12 @@ urlpatterns = [
     # path('', views.product_alt_view),   # function method
     # path('list/', views.product_alt_view),
     # path('listcreate/', views.product_alt_view),
+
+    # mixin views
+
+#    path('create/', views.product_mixin_view), # mixin class method
+#    path('list/', views.product_mixin_view),
+#    path('<int:pk>/', views.product_mixin_view),  
+#    path('<int:pk>/update/', views.product_mixin_view),
+#    path('<int:pk>/delete/',views.product_mixin_view),
 ]
