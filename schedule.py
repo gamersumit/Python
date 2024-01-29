@@ -332,4 +332,7 @@ print("Django rest framework: ------ acc. to schedule  25-1 --- 9 working days -
 # ingesting data django rest framework view
 # django generics retrieveAPIView
 # django rest framework createapiview
+# listAPIview
+# createListAPIview
+
 
