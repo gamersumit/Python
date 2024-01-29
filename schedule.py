@@ -317,3 +317,16 @@ print("Django rest framework: ------ acc. to schedule  25-1 --- 9 working days -
 # https://testdriven.io/blog/drf-views-part-3/ 
 
 ################################################################
+
+# 25-1
+# response of rest api request vs http request
+# echo data through get and post as jsonresponse, httpresponse, rest_framework response
+# Django Model instance to Dictionary
+# rest framework view and response
+# django rest framework model serializers
+
+################################################################
+# date 29-1  // 26 jan holiday, 27-1, 28-1 sat/sun
+# serialization -> extracting/output data from a object
+# deserialization -> making an object based on the input data
+# ingesting data django rest framework view
