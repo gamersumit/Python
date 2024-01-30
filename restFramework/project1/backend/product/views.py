@@ -20,6 +20,8 @@ class ProductCreateAPIView(generics.CreateAPIView, StaffEditorPermissionMixin):
 
     # redefine perform_create method that is automaticatly handled by generics
     def perform_create(self, serilaizer):
+        # email = serilaizer.validated_data.pop('email')
+        # print(email)
         title = serilaizer.validated_data.get('title')
         newcontent = serilaizer.validated_data.get('content') or None
         if not newcontent:
