@@ -5,19 +5,26 @@ from .serializers import ProductSerializer
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from .permissions import IsStaffEditorPermission
+from api.authentication import TokenAuthentication
 
 #reteriveapiviews 
 class ProductDetailAPIView(generics.RetrieveAPIView):
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
-    authentication_classes = [authentication.SessionAuthentication]
+    authentication_classes = [
+        authentication.SessionAuthentication,
+        TokenAuthentication
+                              ]
     permission_classes = [permissions.IsAdminUser, IsStaffEditorPermission]  
 
 #createapiview
 class ProductCreateAPIView(generics.CreateAPIView):
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
-    authentication_classes = [authentication.SessionAuthentication]
+    authentication_classes = [
+        authentication.SessionAuthentication,
+        TokenAuthentication
+                              ]
     permission_classes = [permissions.IsAdminUser, IsStaffEditorPermission]  
     # lookup_field = 'pk' ??  --> 'id' of object
 
@@ -36,7 +43,10 @@ class ProductCreateAPIView(generics.CreateAPIView):
 class ProductListAPIView(generics.ListAPIView):
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
-    authentication_classes = [authentication.SessionAuthentication]
+    authentication_classes = [
+        authentication.SessionAuthentication,
+        TokenAuthentication
+                              ]
     permission_classes = [permissions.IsAdminUser, IsStaffEditorPermission]   # only allow authenticated users 
 
 
@@ -44,7 +54,10 @@ class ProductListAPIView(generics.ListAPIView):
 class ProductListCreateAPIView(generics.ListCreateAPIView):
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
-    authentication_classes = [authentication.SessionAuthentication]
+    authentication_classes = [
+        authentication.SessionAuthentication,
+        TokenAuthentication
+                              ]
     permission_classes = [permissions.IsAdminUser, IsStaffEditorPermission]  # allows read operation for anyone and other operations for authenticated users
     # lookup_field = 'pk' ??  --> 'id' of object
 
@@ -53,7 +66,10 @@ class ProductListCreateAPIView(generics.ListCreateAPIView):
 class ProductUpdateAPIView(generics.UpdateAPIView):
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
-    authentication_classes = [authentication.SessionAuthentication]
+    authentication_classes = [
+        authentication.SessionAuthentication,
+        TokenAuthentication
+                              ]
     permission_classes = [permissions.IsAdminUser, IsStaffEditorPermission]  
     lookup_field = 'pk'
 
@@ -70,7 +86,10 @@ class ProductDeleteAPIView(generics.DestroyAPIView):
     print("deleting")
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
-    authentication_classes = [authentication.SessionAuthentication]
+    authentication_classes = [
+        authentication.SessionAuthentication,
+        TokenAuthentication
+                              ]
     permission_classes = [permissions.IsAdminUser, IsStaffEditorPermission]  
     lookup_field = 'pk'
 
