@@ -339,6 +339,7 @@ print("Django rest framework: ------ acc. to schedule  25-1 --- 9 working days -
 # using function based views for create, retrieve, or list
 # Update and destroy api views
 # mixins and a generic api view
-
+# sessions and permissions
+# user and group permissions with django model permissions
 
 
