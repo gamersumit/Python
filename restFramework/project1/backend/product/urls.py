@@ -4,7 +4,7 @@ from . import views
 urlpatterns = [
  
    # Generic class view
-   path('create', views.product_create_view),  # class method
+   path('create/', views.product_create_view),  # class method
    path('list/', views.product_list_view),
    path('listcreate/', views.product_list_create_view),
    path('<int:pk>/', views.product_detail_view),  # class method
