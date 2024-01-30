@@ -10,11 +10,14 @@ class ProductSerializer(serializers.ModelSerializer):
         view_name='product-edit',
         lookup_field='pk',
     )
+
+    # email = serializers.EmailField(write_only=True)
     class Meta:
         model = Product
         fields = [
             'pk',
             'url',
+            'email',
             'edit_url',
             'title',
             'content',
@@ -23,6 +26,12 @@ class ProductSerializer(serializers.ModelSerializer):
            # 'my_discount', instead i want to call it discount
             'discount',
         ]
+    # overriding create method of Serializers
+    # def create(self, validated_data):
+    #   #  email = validated_data.pop('email')
+    #     obj = super().create(validated_data)
+    #    # print(email, obj)
+    #     return obj
     
     def get_discount(self, obj):
         if(isinstance(obj,Product)) :
