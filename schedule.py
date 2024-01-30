@@ -249,7 +249,7 @@ print("@Django : START(17-1)")
 
 ################################################
 
-# date 22-1 
+#* date 22-1 
 # django models
 # django admin panel
 # manipulation of database
@@ -260,7 +260,7 @@ print("@Django : START(17-1)")
 
 ################################################
 
-# date 23-1 
+#* date 23-1 
 # made realtime chat app
 # made a weather app
 # made a blog app
@@ -268,7 +268,7 @@ print("@Django : START(17-1)")
 
 ################################################
 
-# date 24 -1
+#* date 24 -1
 # completed edit operation in todo
 # started DJANGO REST FRAMEWORK
 # upto creating views with api
@@ -306,7 +306,7 @@ print("Django rest framework: ------ acc. to schedule  25-1 --- 9 working days -
 
 
 
-## RESOURCE :-
+##* RESOURCE :-
 
 # https://www.youtube.com/watch?v=c708Nf0cHrs 
 # https://github.com/codingforentrepreneurs/Django-Rest-Framework-Tutorial
@@ -318,7 +318,7 @@ print("Django rest framework: ------ acc. to schedule  25-1 --- 9 working days -
 
 ################################################################
 
-# 25-1
+#* 25-1
 # response of rest api request vs http request
 # echo data through get and post as jsonresponse, httpresponse, rest_framework response
 # Django Model instance to Dictionary
@@ -326,9 +326,9 @@ print("Django rest framework: ------ acc. to schedule  25-1 --- 9 working days -
 # django rest framework model serializers
 
 ################################################################
-# 26 jan holiday, 27-1, 28-1 sat/sun
+#* 26 jan holiday, 27-1, 28-1 sat/sun
 
-# date 29-1  
+#* date 29-1  
 # serialization -> extracting/output data from a object
 # deserialization -> making an object based on the input data
 # ingesting data django rest framework view
@@ -343,3 +343,8 @@ print("Django rest framework: ------ acc. to schedule  25-1 --- 9 working days -
 # user and group permissions with django model permissions
 
 
+################################################################
+#* date 30-1
+
+# custom permissions
+# token authentication 
