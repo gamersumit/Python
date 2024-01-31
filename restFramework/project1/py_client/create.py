@@ -2,6 +2,7 @@ import requests
 
 
 endpoint =  "http://127.0.0.1:8000/api/product/create/"
+title = input("enter title")
 
 data = {
     "title": "mixin implemented properly",

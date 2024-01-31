@@ -348,3 +348,12 @@ print("Django rest framework: ------ acc. to schedule  25-1 --- 9 working days -
 
 # custom permissions
 # token authentication 
+# Default Django Rest Framework Settings
+# Using Mixins for Permissions
+# ViewSets & Routers
+# URLs, Reverse, & Serializers
+# Model Serializer
+# Custom Validation with Serializers
+
+################################################################
+#* date 31-1
