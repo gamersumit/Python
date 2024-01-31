@@ -19,6 +19,7 @@ class ProductSerializer(serializers.ModelSerializer):
         fields = [
             'pk',
             'url',
+            #'user',
             # 'email',
             'edit_url',
             'title',

@@ -4,17 +4,19 @@ from .models import Product
 from .serializers import ProductSerializer
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
-from api.mixins import StaffEditorPermissionMixin
+from api.mixins import StaffEditorPermissionMixin, UserQuerySetMixin
 
 
 #reteriveapiviews 
-class ProductDetailAPIView(generics.RetrieveAPIView, StaffEditorPermissionMixin):
+class ProductDetailAPIView(UserQuerySetMixin, StaffEditorPermissionMixin,  generics.RetrieveAPIView):
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
 
-#createapiview
-class ProductCreateAPIView(generics.CreateAPIView, StaffEditorPermissionMixin):
-    queryset = Product.objects.all()
+
+
+# #createapiview
+class ProductCreateAPIView(StaffEditorPermissionMixin, generics.CreateAPIView):
+    queryset = Product.objects.all()   
     serializer_class = ProductSerializer
     # lookup_field = 'pk' ??  --> 'id' of object
 
@@ -29,23 +31,23 @@ class ProductCreateAPIView(generics.CreateAPIView, StaffEditorPermissionMixin):
         
         # modified perform_create method to set our content equals to title if content is not provided during post api call
         # now save this data to database
-        serilaizer.save(content = newcontent) # default  is serializer.save() now we added old/ empty content to the newvontent
+        serilaizer.save(user = self.request.user, content = newcontent) # default  is serializer.save() now we added old/ empty content to the newvontent
 
 #ListAPIView
-class ProductListAPIView(generics.ListAPIView, StaffEditorPermissionMixin):
+class ProductListAPIView(UserQuerySetMixin, StaffEditorPermissionMixin, generics.ListAPIView):
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
 
 
 #listcreateapiview
-class ProductListCreateAPIView(generics.ListCreateAPIView, StaffEditorPermissionMixin):
+class ProductListCreateAPIView(StaffEditorPermissionMixin, UserQuerySetMixin, generics.ListCreateAPIView):
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
     # lookup_field = 'pk' ??  --> 'id' of object
 
 
-#UpdateAPIview
-class ProductUpdateAPIView(generics.UpdateAPIView, StaffEditorPermissionMixin):
+# #UpdateAPIview
+class ProductUpdateAPIView(UserQuerySetMixin, StaffEditorPermissionMixin, generics.UpdateAPIView):
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
     lookup_field = 'pk'
@@ -58,8 +60,8 @@ class ProductUpdateAPIView(generics.UpdateAPIView, StaffEditorPermissionMixin):
             instance.save()
 
 
-#DestroyAPIview
-class ProductDeleteAPIView(generics.DestroyAPIView, StaffEditorPermissionMixin):
+# #DestroyAPIview
+class ProductDeleteAPIView(StaffEditorPermissionMixin, UserQuerySetMixin, generics.DestroyAPIView):
     print("deleting")
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
