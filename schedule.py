@@ -357,3 +357,6 @@ print("Django rest framework: ------ acc. to schedule  25-1 --- 9 working days -
 
 ################################################################
 #* date 31-1
+# Request User Data & Customize View Queryset
+# Related Fields & Foreign Key Serializer
+# experimented with old topics
