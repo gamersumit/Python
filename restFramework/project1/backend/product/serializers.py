@@ -7,27 +7,27 @@ from .validators import validate_title, unique_product_title, validate_title_no_
 
 
 
-class ProductInlineSerializer(serializers.Serializer):
-    url = serializers.HyperlinkedIdentityField(
-        view_name='product-detail',
-        lookup_field='pk',
-        read_only=True,
-    )
-    title = serializers.CharField(read_only=True)
+# class ProductInlineSerializer(serializers.Serializer):
+#     url = serializers.HyperlinkedIdentityField(
+#         view_name='product-detail',
+#         lookup_field='pk',
+#         read_only=True,
+#     )
+#     title = serializers.CharField(read_only=True)
 
 
 
 class ProductSerializer(serializers.ModelSerializer):
     owner = UserPublicSerializer(source = 'user', read_only = True)
-    related_products = ProductInlineSerializer(source = 'user.product_set.all', read_only = True, many=True)
-    discount = serializers.SerializerMethodField(read_only=True)  # discount will only be defined during serializaton it will not be defined during deserialization
     url = serializers.SerializerMethodField(read_only=True)
     edit_url = serializers.HyperlinkedIdentityField(
         view_name='product-edit',
         lookup_field='pk',
     )
     title = serializers.CharField(validators = [validate_title_no_hello, unique_product_title])
-    name = serializers.CharField(source = 'title', read_only = True)
+    # name = serializers.CharField(source = 'title', read_only = True)
+    # related_products = ProductInlineSerializer(source = 'user.product_set.all', read_only = True, many=True)
+    # discount = serializers.SerializerMethodField(read_only=True)  # discount will only be defined during serializaton it will not be defined during deserialization
     # email = serializers.EmailField(write_only=True)
     class Meta:
         model = Product
@@ -35,17 +35,17 @@ class ProductSerializer(serializers.ModelSerializer):
             'pk',
             'url',
             'owner',
-            'related_products',
-            # 'user',
-            #'email',
             'edit_url',
             'title',
-            'name',
             'content',
             'price',
             'sale_price',
+            # 'name',
+             #'related_products',
+            # 'user',
+            #'email',
            # 'my_discount', instead i want to call it discount
-            'discount',
+           # 'discount',
         ]
     # overriding create method of Serializers
     # def create(self, validated_data):
@@ -54,10 +54,10 @@ class ProductSerializer(serializers.ModelSerializer):
     #    # print(email, obj)
     #     return obj
     
-    def get_discount(self, obj):
-        if(isinstance(obj,Product)) :
-            return obj.my_discount()
-        return None
+    # def get_discount(self, obj):
+    #     if(isinstance(obj,Product)) :
+    #         return obj.my_discount()
+    #     return None
     
     def get_url(self, obj):
         request = self.context.get('request')
