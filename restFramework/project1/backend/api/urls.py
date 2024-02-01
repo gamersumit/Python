@@ -13,6 +13,5 @@ urlpatterns = [
     path('token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
     path('token/verify/', TokenVerifyView.as_view(), name='token_verify'),
-    path('product/', product_list_create_view, name='product-list'),
     path('', views.api_home, name = 'api_home'),
 ]

@@ -360,3 +360,8 @@ print("Django rest framework: ------ acc. to schedule  25-1 --- 9 working days -
 # Request User Data & Customize View Queryset
 # Related Fields & Foreign Key Serializer
 # experimented with old topics
+
+################################################################
+#* date 1-feb
+# Pagination
+# JSON WEB Token Authentication with simplejwt
