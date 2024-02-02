@@ -5,6 +5,7 @@ from .serializers import ProductSerializer
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from api.mixins import StaffEditorPermissionMixin, UserQuerySetMixin
+from rest_framework import filters
 
 
 #reteriveapiviews 
@@ -37,6 +38,8 @@ class ProductCreateAPIView(StaffEditorPermissionMixin, generics.CreateAPIView):
 class ProductListAPIView(UserQuerySetMixin, StaffEditorPermissionMixin, generics.ListAPIView):
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
+    filter_backends = (filters.SearchFilter, filters.OrderingFilter)
+    search_fields = ['title']  #This will allow the client to filter the items in the list by making queries such as: http://example.com/api/users?search=russell
 
 
 #listcreateapiview
