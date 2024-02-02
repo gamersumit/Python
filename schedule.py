@@ -273,7 +273,7 @@ print("@Django : START(17-1)")
 # started DJANGO REST FRAMEWORK
 # upto creating views with api
 ################################################################################                                                                  
-print("Django rest framework: ------ acc. to schedule  25-1 --- 9 working days ----8/2/24 ")
+print("Django rest framework: ------ acc. to schedule  25-1 --- 9 working days ----7/2/24 ")
 
 ## TOPIC:-
 
@@ -365,3 +365,15 @@ print("Django rest framework: ------ acc. to schedule  25-1 --- 9 working days -
 #* date 1-feb
 # Pagination
 # JSON WEB Token Authentication with simplejwt
+
+################################################################
+#* date 2-feb
+
+# Login via JavaScript Client
+# Handle Request Blocked by CORS via django cors headers
+# Using JWT with JS Client
+# Python RegEx
+# search filter in django restframework
+
+# restframework completed   ---------!>
+################################################################
