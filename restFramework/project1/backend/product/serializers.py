@@ -40,10 +40,10 @@ class ProductSerializer(serializers.ModelSerializer):
             'content',
             'price',
             'sale_price',
-            # 'name',
+           # 'name',
              #'related_products',
             # 'user',
-            #'email',
+            #'email', 
            # 'my_discount', instead i want to call it discount
            # 'discount',
         ]

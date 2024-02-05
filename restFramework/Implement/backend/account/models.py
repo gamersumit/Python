@@ -1,13 +1,20 @@
 from django.db import models
 from django.contrib.auth.hashers import make_password
+from django.contrib.auth.models import AbstractUser
+
 
 # Create your models here.
 
-class User(models.Model):
-    username : models.CharField(max_length = 14)
-    password = models.CharField(max_length = 128)
+class CustomUser(AbstractUser):
+    
+    first_name = models.CharField(max_length=150, blank=False, null = False)
+    email = models.EmailField(unique=True, blank=False, null=False)
+    is_mode_user = models.BooleanField(default=False)
+    is_master_user = models.BooleanField(default = False)
+    USERNAME_FIELD = 'email'
+    REQUIRED_FIELDS = ['username']
 
-    def save(self, *args, **kwargs):
-        # Hash the password before saving
-        self.password = make_password(self.password)
-        super().save(*args, **kwargs)
+
+    def __str__(self):
+        return self.username
+    
