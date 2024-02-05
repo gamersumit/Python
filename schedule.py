@@ -377,3 +377,20 @@ print("Django rest framework: ------ acc. to schedule  25-1 --- 9 working days -
 
 # restframework completed   ---------!>
 ################################################################
+
+# Started implementing restframework to create my own api(s)
+
+
+################################################################
+#* date 3-2/4-2 sat/sun
+
+################################################################
+#* date 5-feb
+# created some api on my own
+# custom user Registration
+# users are stored with hashed password 
+# login api with email and password instead of username and password
+# calorie api(can add items with description and calories with type of which calories are counted like(kg, litre, units etc))
+# created three different types of user with different permissions
+# used jwt authentication to authenticate users
+# connected evrything with postgres instead of default sqllite and admin panel
