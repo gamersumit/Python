@@ -394,3 +394,11 @@ print("Django rest framework: ------ acc. to schedule  25-1 --- 9 working days -
 # created three different types of user with different permissions
 # used jwt authentication to authenticate users
 # connected evrything with postgres instead of default sqllite and admin panel
+
+################################################################
+#* date 6-feb
+# implemented validation of password using regex
+# implemented email sending functionality 
+# learned about websockets
+# learned how the process of email link verification
+# learned about the process of forget password or password resetting thorugh mail links
