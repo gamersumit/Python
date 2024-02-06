@@ -5,6 +5,7 @@ import re
 
 class CustomUserSerializer(serializers.ModelSerializer):
 
+    password = serializers.CharField(max_length=128, min_length = 8, write_only = True)
     class Meta:
         model = CustomUser
         fields = [
@@ -38,16 +39,12 @@ class CustomUserSerializer(serializers.ModelSerializer):
         if not re.search(r"[@#$%^&*()\-_+=.]", value):
             raise serializers.ValidationError("Password must contain a special character(@,#,$,%,^,&,*,(,),-,_,+,=,.)")
 
-        return value
+        return make_password(value)    # return hashed password
+    
 
+    def validate_email(self, value):
+        pass
 
-
-    def create(self, validated_data):
-        print("create")
-        validated_data['password'] = make_password(validated_data.get('password'))
-        print(validated_data['password'])
-        user = CustomUser.objects.create(**validated_data)
-        return user
     
     
     

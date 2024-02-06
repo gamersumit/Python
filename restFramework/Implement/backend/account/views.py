@@ -18,7 +18,7 @@ class CustomUserRegistrationView(generics.CreateAPIView) :
 
 class SendMail(APIView) :
     def post(self,request):
-        
+
         email = request.data.get('to')
         if not email:
             return Response({'status': False, 'message': 'Missing recipient email'}, status=400)
@@ -27,7 +27,7 @@ class SendMail(APIView) :
             'testing subject', 
             'testing email body, this message is from python',
             settings.EMAIL_HOST_USER,
-            [email]
+            [email] 
         )
 
         try :
