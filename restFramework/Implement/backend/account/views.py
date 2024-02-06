@@ -10,10 +10,11 @@ import requests
 
 # Create your views here.
 
-class CustomerUserRegistrationView(generics.CreateAPIView) :
+class CustomUserRegistrationView(generics.CreateAPIView) :
     queryset = CustomUser.objects.all()
     serializer_class = CustomUserSerializer
+  
 
 
 # SHORT NAMING :
-user_register_view = CustomerUserRegistrationView.as_view()
+user_register_view = CustomUserRegistrationView.as_view()
