@@ -17,7 +17,10 @@ class CustomUserSerializer(serializers.ModelSerializer):
             'last_name',
             'is_mode_user',
             'is_master_user',
+            'is_verified',
         ]
+    
+    
     
     def validate_password(self, value):
         # valid password : >= 8 char, must contains lower at least 1 char of each 
@@ -42,8 +45,8 @@ class CustomUserSerializer(serializers.ModelSerializer):
         return make_password(value)    # return hashed password
     
 
-    def validate_email(self, value):
-        pass
+    # def validate_email(self, value):
+    #     pass
 
     
     
