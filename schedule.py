@@ -401,4 +401,9 @@ print("Django rest framework: ------ acc. to schedule  25-1 --- 9 working days -
 # implemented email sending functionality 
 # learned about websockets
 # learned how the process of email link verification
-# learned about the process of forget password or password resetting thorugh mail links
+# learned about the proc
+
+################################################################
+#* date 7-feb
+# implemented email link verification
+# implemented password link verification
