@@ -406,4 +406,11 @@ print("Django rest framework: ------ acc. to schedule  25-1 --- 9 working days -
 ################################################################
 #* date 7-feb
 # implemented email link verification
-# implemented password link verification
+# implemented password resetting through email link 
+
+################################################################
+#* date 8-feb
+# implemented login functionality
+# python , django, django restframework completed ----> completed today 
+
+################################################################
