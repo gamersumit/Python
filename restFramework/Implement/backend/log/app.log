@@ -1,0 +1,41 @@
+Cron job called
+List of users removed :
+
+<QuerySet []>
+"POST /account/register/ HTTP/1.1" 200 218
+Cron job called
+List of users removed :
+
+<QuerySet [<CustomUser: cron>]>
+Cron job called
+List of users removed :
+
+<QuerySet []>
+
+----------------------------------------------------------------
+Cron job called at: 2024-02-08 12:15:01
+List of users removed :
+
+<QuerySet []>
+
+----------------------------------------------------------------
+Cron job called at: 2024-02-08 12:16:01
+List of users removed :
+
+<QuerySet []>
+
+----------------------------------------------------------------
+Cron job called at: 2024-02-08 12:17:01
+List of users removed :
+[]
+"POST /account/register/ HTTP/1.1" 200 218
+
+----------------------------------------------------------------
+Cron job called at: 2024-02-08 12:18:01
+List of users removed :
+[<CustomUser: cron>]
+
+----------------------------------------------------------------
+Cron job called at: 2024-02-08 12:19:00
+List of users removed :
+[]
