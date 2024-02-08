@@ -12,7 +12,8 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 from pathlib import Path
 import datetime
-
+import logging
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -33,6 +34,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'django_crontab',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -171,3 +173,36 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = 'devlopertemp@gmail.com'  # this is temporary mail change it with ypur mail
 EMAIL_HOST_PASSWORD = ''
 
+
+
+# django looger
+
+APP_LOG_FILENAME = os.path.join(BASE_DIR, 'log/app.log')
+
+LOGGING = {
+    "version": 1,
+    "disable_existing_loggers": False,
+    "handlers": {
+        "app_log_file": {
+            "level": "INFO",
+            "class": "logging.FileHandler",
+            "filename": APP_LOG_FILENAME,
+        },
+    },
+    "root": {
+        "handlers": ["app_log_file"],
+        "level": "INFO",
+    },
+    "loggers": {
+        "django": {
+            "handlers": ["app_log_file"],
+            "level": "INFO",
+            "propagate": False,
+        },
+    },
+}
+# cron job
+
+CRONJOBS = [
+    ('*/1 * * * *', 'account.cron.remove_unverified_users')
+]
