@@ -21,8 +21,12 @@ class RegisterView(generics.GenericAPIView) :
         serializer.is_valid(raise_exception = True)
         serializer.save()
 
+        relative_link = reverse('email_verify')
+        subject = "Verification Mail  for Django testing app"
+        message = "This email is sent to verify if it\'s you who registered on our djangowebsite.\nTo verify please click on the link below."
+       
         # send mail
-        status = Utils.sendEmailVerificationLink(serializer.data['email'], request)
+        status = Utils.sendLink(serializer.data['email'], request, relative_link, subject, message)
         
         if status[0] :
             return Response({'status': True, 'data': serializer.data,'message' : 'User Registered Successfully'}, status =200)
@@ -126,7 +130,7 @@ class SendForgotPasswordLinkView(generics.GenericAPIView):
 class LoginView(generics.GenericAPIView) :
     serializer_class = CustomUserSerializer
 
-    def get(self, request):
+    def post(self, request):
         # get login data from request
         try :
             body = json.loads(request.body.decode('utf-8'))
@@ -141,7 +145,7 @@ class LoginView(generics.GenericAPIView) :
             user = CustomUser.objects.get(email=email)
            
             if user.is_verified :
-                if check_password(password, user.password):
+                if user.check_password(password):
                     user = self.serializer_class(user)
                     return Response({'status': True, 'user': user.data,'message' : 'Logged in Successfully'}, status =200)
        
