@@ -1,5 +1,25 @@
 from rest_framework import permissions
 
+class NonVerifiedUserPermissions(permissions.DjangoModelPermissions) :
+    permission_queryset = None
+
+    perms_map = {
+       # 'GET': [],   // original
+        'OPTIONS': [],
+        'HEAD': [],
+        'GET': ['%(app_label)s.view_%(model_name)s'],
+        'POST': ['%(app_label)s.add_%(model_name)s'],
+        'PUT': ['%(app_label)s.change_%(model_name)s'],
+        'PATCH': ['%(app_label)s.change_%(model_name)s'],
+        'DELETE': ['%(app_label)s.delete_%(model_name)s'],
+    }
+
+    def has_permission(self, request, view):
+        if not request.user.is_verified :
+            return  False
+        
+        return super().has_permission(request, view)
+    
 class CalorieChartPermissions(permissions.DjangoModelPermissions):
     permission_queryset = None
 
@@ -19,6 +39,7 @@ class CalorieChartPermissions(permissions.DjangoModelPermissions):
         has_model_permissions = super().has_permission(request, view)
         print(request.method)
 
+        
         if request.method == 'DELETE' : 
             return request.user.is_master_user
         
@@ -29,3 +50,5 @@ class CalorieChartPermissions(permissions.DjangoModelPermissions):
             return True   
 
         return has_model_permissions    
+    
+

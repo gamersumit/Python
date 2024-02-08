@@ -15,5 +15,5 @@ urlpatterns = [
     path('login/token/verify/', TokenVerifyView.as_view(), name='token_verify'),
     path('forgotpassword/', views.forgot_password_view, name='forgot_password'),
     path('sendforgotpasslink/', views.send_forgot_password_link_view, name = 'send_forgot_pass_link'),
-
+    path('login/', views.login_view, name = 'login'),
 ]
