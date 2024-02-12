@@ -412,5 +412,16 @@ print("Django rest framework: ------ acc. to schedule  25-1 --- 9 working days -
 #* date 8-feb
 # implemented login functionality
 # python , django, django restframework completed ----> completed today 
+# implemented test cases in test.py
+# intergrated and implemented cronjob
+# integrated loggers
+################################################################
+#* date 9-feb
+# worked on the task HardRock menu and cart apis
 
 ################################################################
+#* data 10, 11 feb sat/sun but worked on problem of jwt token and image to base64
+
+################################################################
+#* date 12-feb 
+# worked on the task did some enhancement and completed task
