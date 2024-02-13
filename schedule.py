@@ -425,3 +425,13 @@ print("Django rest framework: ------ acc. to schedule  25-1 --- 9 working days -
 ################################################################
 #* date 12-feb 
 # worked on the task did some enhancement and completed task
+
+################################################################
+#* date 13-feb 
+# studied:
+# about websockets
+# consumers
+# routers
+# async and sync consumers
+# building connection and sending multiple requests on same connection
+# sending realtime messages to client and getting realtime messages from client
