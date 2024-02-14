@@ -435,3 +435,11 @@ print("Django rest framework: ------ acc. to schedule  25-1 --- 9 working days -
 # async and sync consumers
 # building connection and sending multiple requests on same connection
 # sending realtime messages to client and getting realtime messages from client
+
+
+################################################################
+#* date 14-feb 
+# channels
+# realtime chatting inside a static group
+# dynamic group and mutliple clients
+# tried connecting with database but didn't succeed
