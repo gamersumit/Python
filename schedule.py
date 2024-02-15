@@ -443,3 +443,11 @@ print("Django rest framework: ------ acc. to schedule  25-1 --- 9 working days -
 # realtime chatting inside a static group
 # dynamic group and mutliple clients
 # tried connecting with database but didn't succeed
+
+################################################################
+#* date 15-feb 
+# did today's task of building bookstore APIs
+# connected django channels with databse
+# user authentication in  websockets
+# learned about fined functions, event, structure and syntax of websockts 
+#learned more about viewsets and routers in django 
