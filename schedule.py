@@ -451,3 +451,20 @@ print("Django rest framework: ------ acc. to schedule  25-1 --- 9 working days -
 # user authentication in  websockets
 # learned about fined functions, event, structure and syntax of websockts 
 #learned more about viewsets and routers in django 
+
+
+################################################################
+#* date 16-feb (upto 4pm) --  majestic
+
+# added cart functionality to bookstore project
+# review the code of ticker API(s) and made some changes in serialization and solved some edge cases
+
+################################################################
+#* date 17, 18-feb sat/sunday
+
+################################################################
+#* date 18-feb 
+
+# solved edge cases of ticker APIs
+# started learning dynamoDB (learned creating tables, insert, read, list operations and gathered information about dynamoDB schema, Nosql databases)
+# started working with boto3 python library
